@@ -1,12 +1,12 @@
 from flask import Flask, request
 from datetime import date, datetime, timezone
-
+from flask_cors import CORS
 
 app = Flask(__name__)
 
+CORS(app)
 
-
-@app.route('/')
+@app.route('/api')
 def user():
     """ It returns the user information
     """
