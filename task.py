@@ -5,12 +5,8 @@ from datetime import date, datetime, timezone
 app = Flask(__name__)
 
 
+
 @app.route('/')
-def home():
-    return ("this is our home page, please navigate to /user to get the requirement you need")
-
-
-@app.route('/user')
 def user():
     """ It returns the user information
     """
