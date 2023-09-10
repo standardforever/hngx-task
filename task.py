@@ -29,8 +29,8 @@ def user():
         "track": track,
         "slack_name": slack_name,
         "current_day": days_of_the_week[today],
-        "github_file_url": None,
-        "github_repo_url": None,
+        "github_file_url": "https://github.com/standardforever/hngx-task/blob/main/task.py",
+        "github_repo_url": "https://github.com/standardforever/hngx-task",
         "utc_time": datetime.utcnow().replace(tzinfo=timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
     }
 
