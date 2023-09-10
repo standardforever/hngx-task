@@ -18,7 +18,6 @@ def user():
     # Get the user slack name and track from query params
     slack_name = request.args.get('slack_name')
     track = request.args.get('track')
-    print(slack_name, track)
 
     # Get the current day
     today = date.today().weekday()
